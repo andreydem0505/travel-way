@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Gotham SSm A,Gotham SSm B,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Droid Sans,Helvetica Neue,Arial,sans-serif!important;
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    color: red;
+}
+
+/* all */
+.theme-color-blue {
+    color: #008aff;
+}
+/* all */
+
+/* header */
+header {
+    /*background-color: #043cb0;*/
+    background-color: #333;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 0;
+    position: sticky;
+    color: white;
+    border-bottom: white solid;
+    z-index: 5;
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+}
+
+.logo:hover {
+    color: white;
+}
+
+.my-nav-item {
+    color: #9b9898;
+    margin-left: 20px;
+    transition: color .2s linear;
+}
+
+.my-nav-item-active {
+    color: white;
+}
+
+.my-nav-item:hover {
+    color: white;
+}
+/* header */
+
+/* main page */
+.main-center {
+    padding-top: 200px;
+    padding-bottom: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    text-align: center;
+    background-color: #333333;
+    color: white;
+}
+
+.main-text-bold {
+    font-weight: 700;
+}
+/* main page */
+
+/* countries-tours page */
+.countries-main-text {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.search-btn {
+    background-color: white;
+    padding-left: 10px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.search {
+    width: 400px;
+    padding: 20px 0;
+}
+/* countries-tours page */
+
+/* stars */
+.rating-wrapper {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.rating-input {
+  position: absolute;
+  left: 0;
+  top: -50px;
+}
+
+.rating-star:hover,
+.rating-star:hover~.rating-star {
+  background-position: 0 0;
+}
+
+.rating-wrapper:hover .rating-star:hover,
+.rating-wrapper:hover .rating-star:hover~.rating-star,
+.rating-input:checked~.rating-star {
+  background-position: 0 0;
+}
+
+.rating-star,
+.rating-wrapper:hover .rating-star {
+  float: right;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url('http://css-stars.com/wp-content/uploads/2013/12/stars.png') 0 -16px;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 640px) {
+  .responsive-ad {
+    display: none;
+    text-align: center;
+  }
+  .responsive-ad-device {
+    display: block;
+  }
+}
+
+@media screen and (min-device-width: 960px) {
+  .responsive-ad-device {
+    display: none;
+  }
+  .responsive-ad {
+    display: block;
+    text-align: center;
+  }
+}
+/* stars */
